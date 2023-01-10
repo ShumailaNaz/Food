@@ -1,41 +1,161 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container
-{
+
+.container {
     /* max-width: max-content;
     max-height: max-content; */
-    background-color: bisque;
+    background-color: #000;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
 }
-nav #logo{
-    width: 10vw;
+
+nav #logo {
+    width: 15vw;
+    height: 13vh;
+
 
 }
-nav .nav-item select,option , a{
+
+nav .nav-item select,
+option,
+a {
     font: bold;
 }
-nav .nav-item select{
+
+nav .nav-item select {
     border: none;
     background-color: transparent;
     margin-right: 15px;
 }
-nav .nav-item a{
+
+nav .nav-item a {
     text-decoration: none;
     color: #000;
     margin-right: 15px;
 }
-nav #subscribe{
-    background:rgb(212, 78, 25);
+
+nav #subscribe {
+    background: rgb(212, 78, 25);
     border-radius: 20px;
     padding: 10px 20px;
     color: #fff;
     font-size: 1em;
+    outline: none;
+    border: 0;
+}
+
+/* Slider */
+.slider {
+    background-image: url(assets/slider.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    padding-top: 30px;
+
+}
+.slider-content{
+    border: 0px solid #000 ;
+    width: 30%;
+    margin: auto;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 50px;
+}
+
+
+
+#blog-img{
+    width: 500px;
+    border-radius: 10px;
+}
+
+
+main{
+    display: flex;
+    background-color: beige;
+    justify-content: center;
+    padding: 20px;
+}
+.main-article{
+width: 30%;
+background-color: rgb(24, 160, 115);
+}
+aside{
+    background-color: aqua;
+    width: 40%;
+}
+
+footer{
+    color: #fff;
+    padding: 100px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .slider-content{
+        border: 2px solid #000;
+        width: 80%;
+        margin: auto;
+        border-radius: 12px;
+        background-color: #fff;
+        padding: 50px;
+    }
+} 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+    .slider-content{
+    border: 2px solid #000;
+    width: 70%;
+    margin: auto;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 50px;
+}}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .slider-content{
+        border: 2px solid #000;
+        width: 50%;
+        margin: auto;
+        border-radius: 12px;
+        background-color: #fff;
+        padding: 50px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+    .slider-content{
+    border: 2px solid #000;
+    width: 40%;
+    margin: auto;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 50px;
+}}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .slider-content{
+        border: 2px solid #000;
+        width: 30%;
+        margin: auto;
+        border-radius: 12px;
+        background-color: #fff;
+        padding: 50px;
+    }
 }
