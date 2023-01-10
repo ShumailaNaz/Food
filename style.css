@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    /* max-width: max-content;
+    max-height: max-content; */
+    background-color: bisque;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+nav #logo{
+    width: 10vw;
+
+}
+nav .nav-item select,option , a{
+    font: bold;
+}
+nav .nav-item select{
+    border: none;
+    background-color: transparent;
+    margin-right: 15px;
+}
+nav .nav-item a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 15px;
+}
+nav #subscribe{
+    background:rgb(212, 78, 25);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1em;
+}
