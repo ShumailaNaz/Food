@@ -7,7 +7,7 @@
 .container {
     /* max-width: max-content;
     max-height: max-content; */
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 nav {
@@ -44,7 +44,7 @@ nav .nav-item a {
     margin-right: 15px;
 }
 
-nav #subscribe {
+.orange {
     background: rgb(212, 78, 25);
     border-radius: 20px;
     padding: 10px 20px;
@@ -56,13 +56,15 @@ nav #subscribe {
 
 /* Slider */
 .slider {
+    display: flex;
     background-image: url(assets/slider.jpg);
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
     height: 50vh;
     width: 100%;
-    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
 
 }
 .slider-content{
@@ -84,23 +86,51 @@ nav #subscribe {
 
 main{
     display: flex;
-    background-color: beige;
+ 
     justify-content: center;
     padding: 20px;
 }
 .main-article{
 width: 30%;
-background-color: rgb(24, 160, 115);
+/* background-color: rgb(24, 160, 115); */
 }
 aside{
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 40%;
 }
 
 footer{
     color: #fff;
     padding: 100px;
+    background-color: #000;
+    text-align: center;
 }
+.social{
+    display: flex;
+    justify-content: center;
+}
+#subscribe a{
+    text-decoration: none;
+    color: #fff;
+}
+.social a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    padding-right: 10px;
+}
+
+.mod{
+ 
+    position: absolute;
+    top: 10%;
+    left: 40%;
+ 
+    background-color: rgb(75, 70, 70);
+    visibility: hidden;
+
+}
+
 
 
 
